@@ -324,7 +324,7 @@ class TCP(nn.Module):
 			'delta': float(delta.astype(np.float64)),
 		}
 
-		return steer, throttle, brake, metadata
+		return steer, throttle, brake, metadata, waypoints
 
 
 	def get_action(self, mu, sigma):
